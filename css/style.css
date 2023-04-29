@@ -63,7 +63,7 @@ font-family: 'Noto Sans JP', sans-serif;
 s
 
 
-/*abre mein */
+/*abre contenedor productos*/
 .productos div img{
     width: 300px;
     height: 300px;
@@ -71,7 +71,6 @@ s
     justify-content: space-around;
     background-size: cover;
     background-position: center;
-/*cierra mein*/
 
 }.productos{
     background-image: url(../img/fondopara\ las\ tarjetas.jpg);
@@ -90,7 +89,6 @@ s
     background-color: rgba(213, 79, 67, 0.989);
 ;
 }
-/*abre mein */
 .productos div  a{
     font-family: Arial, Helvetica, sans-serif; color: black;
     font-size: medium;
@@ -105,7 +103,7 @@ s
     display: flex;
     margin: 25px;
 }
-/*cierra mein*/
+/*cierra contenedor productos*/
 .redes {
     display: flex;
     justify-content: end;
