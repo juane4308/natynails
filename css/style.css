@@ -1,70 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Noto+Sans+JP:wght@100;300;900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
-
-header{
-
-    background-color: rgb(237, 216, 216);
-    background-image: url("../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg");
+.hero {
+    color: aqua;
+    height: 200px;
     width: 100%;
-height: 500px;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-font-family: 'Noto Sans JP', sans-serif;
-
+}
+.hero .menu img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    padding: 8px;
+    top: 0;
+    left: 5px;
 }
 
-/*esta parte es la de naty nails el placer..parrafo */
- .parrafo p{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 300%;
-    background-color: rgba(199, 95, 95, 0.669);
-    background-image: url(../img/espacio\ de\ salon.jfif);
-    height: 300px;
+.hero .menu nav ul li{
+    list-style: none;
+    margin-left: 75px;
+    float: left;
+    padding: 25px 0;
+}
+.hero .menu nav ul li a{
+    text-decoration: none;
+    color: rgb(224, 207, 207);
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+
+.hero {
+    background-color: rgb(237, 216, 216);
+    background-image: url(../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    margin-top: 3px;
-    padding-top: 5px;
+    background-attachment: fixed;
+    font-family: 'Noto Sans JP', sans-serif;
 }
+
+/* abre header */
 .hero nav ul {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-
+    position: absolute;
 }
-.hero nav ul li a{
-    color: rgb(10, 10, 10);
-    font-size: 100%;
+
+.barranav ul li a {
+    color: rgb(222, 12, 12);
+    font-size: 15px;
     display: flex;
     position: absolute;
-    top: 0px;
-}  
-.hero nav div h1{
-    display: flex; 
-    justify-content: center; 
-    font-size: 50px;
-    margin-top: 15px;
+    top: 10px;
+    text-decoration: none;
 }
-.hero nav div img{
-    height: 300px;
-    width: 300px;
+
+.hero  img {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    height: 250px;
+    width: 250px;
+    display: flex;
     position: absolute;
-    left: 450px;
-    top: 60px;
-    padding: 20px;
+    top: 140px;
+    left: 500px;
+    background-attachment: fixed;
 }
-s
+
+.hero h1 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    top: 0;
+}
+
+
+/*cierra header*/
+.parrafo p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 200%;
+    background-color: rgba(199, 95, 95, 0.669);
+    background-image: url(../img/espacio\ de\ salon.jfif);
+    height: 300px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border: #d6c0c0 
+    }
+
 
 
 /*abre contenedor productos*/
-.productos div img{
+.productos div img {
     width: 300px;
     height: 300px;
     display: flex;
@@ -72,13 +114,16 @@ s
     background-size: cover;
     background-position: center;
 
-}.productos{
+}
+
+.productos {
     background-image: url(../img/fondopara\ las\ tarjetas.jpg);
     padding-top: 10px;
     height: 90%;
+    top: 20px;
 }
-/*esta parte es la de tarjetas 3  en horizontal */
-.productos div{
+
+.productos div {
     width: 300px;
     height: 400px;
     text-align: center;
@@ -87,22 +132,75 @@ s
     align-items: center;
     padding: 5px;
     background-color: rgba(213, 79, 67, 0.989);
-;
+    top:20px ;
+    align-items: center;
 }
-.productos div  a{
-    font-family: Arial, Helvetica, sans-serif; color: black;
+
+.productos div a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
     font-size: medium;
     border: 1px rgb(207, 78, 78) solid;
     background-color: coral;
     padding: 10px;
-    
+
 }
-.productos div img{
+
+.productos div img {
     height: 200px;
     width: 250px;
     display: flex;
     margin: 25px;
 }
+/*pagina rusas*/
+.redondas{
+    width: 0px;
+    height: 10px;
+    flex-grow:1 ;
+    opacity: .8;
+    transition: .5 ease;
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+.redondas .tituloh3 {
+    color: rgb(156, 38, 38);
+    display: flex;
+    top: 0px;
+
+}
+.redondas img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid coral;
+}
+
+.redondas img:hover{
+    cursor: crosshair;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.contenedorimagenesrusas{
+    height: 1000px;
+    width: 100%;
+}
+.fotorusa img{
+    width: 300px;
+    height: 300px;
+}
+.contenedorimagenesrusas .tarjetarusa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    gap: 3px;
+    background-image: url(../img/fondo\ rusas.jpg);
+}
+/*cierra rusas*/
+
+
 /*cierra contenedor productos*/
 .redes {
     display: flex;
@@ -112,27 +210,80 @@ s
     height: 100%;
     width: 100%;
 }
+
 /* pagina semipermanente*/
 .semipermanente {
     background-image: url(../img/manicuria\ semi.jfif);
 }
+/*cierra semipermanente*/
 
+/*abre media */
 
+@media screen and (max-width:1190px) {
+    .hero nav{
+        background: none;
+        height: 20%;
+        width: 20%;
+}
+.contenedorimagenessemi .tarjetasemi  {
+    display: flex;
+    flex-direction: column;
 
+}
+    
+    .hero img{
+        height: 300px;
+        width: 300px;
+        top: 50px;
+        left: 0;
+    }
+    }.barranav ul li a{
+        color: black;
+        position: absolute;
+    }
+    .parrafo{
+        align-items: end;
+        font-size: 100%;
+    }
+/*cierra media */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*pagina americana*/
+    .contenedorimagenes{
+        height: 800px;
+        width: 100%
+    }
+    .contenedorimagenes .tarjeta{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+        gap: 3px;
+        background-image: url(../img/fondo\ americana.webp);
+    }
+    .fotoamericana img{
+        height: 300px;
+        width: 300px;
+        color: coral;
+    }
+    .fotoamericana h3{
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    /*cierra pagina amricana*/
+    /*abre pagina semi */
+    .contenedorimagenessemi{
+        width: 100%;
+    }
+    .contenedorimagenessemi .tarjetasemi{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+        gap: 3px;
+        background-image: url(../img/fondosemipermanente.jpg);
+    }
+    .fotosemi img{
+        height: 300px;
+        width: 300px;
+    }
 
 
 
