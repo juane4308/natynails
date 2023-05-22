@@ -1,0 +1,46 @@
+.parrafo {
+    p {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 200%;
+        background-color: rgba(199, 95, 95, 0.669);
+        background-image: url(./img/espacio\de\salon.jfif);
+        height: 300px;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        border: #d6c0c0
+    }
+    .productos {
+        background-image: url(./img/fondopara\las\tarjetas.jpg);
+        padding-top: 10px;
+        height: 90%;
+        top: 20px;
+        .contenedor {
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            display: inline-block;
+            margin: 50px;
+            align-items: center;
+            padding: 5px;
+            background-color: rgba(213, 79, 67, 0.989);
+            top: 20px;
+            align-items: center;
+            img {
+                height: 200px;
+                width: 250px;
+                display: flex;
+                margin: 25px;
+                a {
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: black;
+                    font-size: medium;
+                    border: 1px rgb(207, 78, 78) solid;
+                    background-color: coral;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

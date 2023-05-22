@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Noto+Sans+JP:wght@100;300;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -24,16 +26,16 @@
 
 .hero .menu nav ul li{
     list-style: none;
-    margin-left: 75px;
+    margin-left: 55px;
     float: left;
-    padding: 25px 0;
+    padding: 15px;
 }
 .hero .menu nav ul li a{
+    width: 100%;
     text-decoration: none;
     color: rgb(224, 207, 207);
     font-weight: bold;
     position: absolute;
-    display: flex;
     top: 0;
 }
 
@@ -81,134 +83,172 @@
 
 .hero h1 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     position: absolute;
     top: 60px;
-    left: 500px;
+    left: 30px;
     top: 0;
 }
+.aside{
+    display: flex;
+    flex-direction: column;
+    top: 0;
+}
+.main{
+    top: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 127, 80, 0.647);
+}
+.wrapper{
+    display: flex;
+    width: 80%;
+    height: 400px;
+    justify-content: space-around;
+}
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+}
 
+.card:before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(249, 115, 115, 0.467), rgba(242, 74, 80, 0.581));
+    z-index: 2;
+    transition:0.5s all;
+    opacity:1;
+}
 
-/*cierra header*/
-.parrafo p {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 200%;
-    background-color: rgba(199, 95, 95, 0.669);
-    background-image: url(../img/espacio\ de\ salon.jfif);
-    height: 300px;
-    background-position: center;
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .info h2{
+    margin:0;
+}
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    
+}
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+/*cierra header*
+
+/*pagina rusas*/
+
+.titulorusa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+}
+.contenedortitulo h2{
+    width: 600px;
+    font-family:'Great Vibes', cursive; 
+    margin: 15px;
+    font-size: 60px;
+    background-color: rgba(239, 152, 120, 0.823);
+    position: relative;
+}
+.contenedortitulo img{
+    height: 80px;
+    width: 80px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 510px;
+    right: 400px;
+}
+.tarjetarusa img{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(255, 127, 80, 0.839);
     display: flex;
     align-items: center;
-    margin-top: 20px;
-    border: #d6c0c0 
-    }
-
-
-
-/*abre contenedor productos*/
-.productos div img {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    border-radius: 4px;
+    transform: 0.3s  ease-in-out;
+    border: solid 3px black;
     background-size: cover;
     background-position: center;
-
 }
-
-.productos {
-    background-image: url(../img/fondopara\ las\ tarjetas.jpg);
-    padding-top: 10px;
-    height: 90%;
-    top: 20px;
-}
-
-.productos div {
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    display: inline-block;
-    margin: 50px;
-    align-items: center;
-    padding: 5px;
-    background-color: rgba(213, 79, 67, 0.989);
-    top:20px ;
-    align-items: center;
-}
-
-.productos div a {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: medium;
-    border: 1px rgb(207, 78, 78) solid;
-    background-color: coral;
-    padding: 10px;
-
-}
-
-.productos div img {
-    height: 200px;
-    width: 250px;
-    display: flex;
-    margin: 25px;
-}
-/*pagina rusas*/
-.redondas{
-    width: 0px;
-    height: 10px;
-    flex-grow:1 ;
-    opacity: .8;
-    transition: .5 ease;
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-}
-.redondas .tituloh3 {
-    color: rgb(156, 38, 38);
-    display: flex;
-    top: 0px;
-
-}
-.redondas img{
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-    border: 2px solid coral;
-}
-
-.redondas img:hover{
-    cursor: crosshair;
-    width: 200px;
-    height: 200px;
-    opacity: 1;
-    filter: contrast(120%);
+.tarjetarusa:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
 }
 .contenedorimagenesrusas{
-    height: 1000px;
-    width: 100%;
-}
-.fotorusa img{
-    width: 300px;
-    height: 300px;
-}
-.contenedorimagenesrusas .tarjetarusa{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr;
-    gap: 3px;
-    background-image: url(../img/fondo\ rusas.jpg);
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 127, 80, 0.558);
 }
-/*cierra rusas*/
+/*cierra page rusas*/
 
-
-/*cierra contenedor productos*/
-.redes {
+.redes div {
     display: flex;
     justify-content: end;
     justify-content: space-around;
     background-color: rgb(156, 143, 143);
     height: 100%;
     width: 100%;
+    font-family:'Great Vibes', cursive;
+}
+.redes div p{
+    font-family:'Great Vibes', cursive;
+    font-size: 30px;
+}
+.redes h3{
+    font-family:'Great Vibes', cursive;
+    background-color: coral;
 }
 
 /* pagina semipermanente*/
@@ -216,6 +256,55 @@
     background-image: url(../img/manicuria\ semi.jfif);
 }
 /*cierra semipermanente*/
+/*pagina americna*/
+.tituloamericana{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: coral;
+}
+.contenedortituloamericana h2{
+    width: 600px;
+    font-family:'Great Vibes', cursive;
+    margin: 15px;
+    font-size: 60px;
+    background-color: rgba(239, 152, 120, 0.823);
+    position: relative;
+}
+.contenedortituloamericana img{
+    height: 80px;
+    width: 80px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 510px;
+    right: 400px;
+}
+.tarjetaamericana img{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(255, 127, 80, 0.839);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transform: 0.3s  ease-in-out;
+    border: solid 3px black;
+    background-size: cover;
+    background-position: center;
+}
+.tarjetaamericana:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+.contenedorimagenesamericanas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 127, 80, 0.558);
+}
+/*cierra page americana*/
 
 /*abre media */
 
@@ -228,7 +317,6 @@
 .contenedorimagenessemi .tarjetasemi  {
     display: flex;
     flex-direction: column;
-
 }
     
     .hero img{
@@ -245,31 +333,124 @@
         align-items: end;
         font-size: 100%;
     }
-/*cierra media */
+    /*mediaquery rusa*/
+    @media screen and (max-width:986px){
+        .contenedortitulo img{
+            left: 300px;
+            transition: 2s;
+            height:50px;
+            width: 50px;
+            transition: 2s;
+        }
+        .titulorusa{
+            justify-content: start;
+            transition: 2s;
+        }
+        .contenedortitulo h2{
+            width: 500px;
+            font-size: 30px;
+            transition: 2s;
+        }
+        .redes img{ 
+            height: 30px;
+            width: 30px;
+            transition: 2s;
+        }
+    }
+    @media screen and (max-width:780px){
+        .contenedorimagenesrusas {
+            width: 100%;
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+        }
+        .redes img{
+            width:30px;
+            height: 30px;
+            transition: 2s;
+        }
+    }
+    @media screen and (max-width:527px){
+        .contenedorimagenesrusas{
+            grid-template-columns: 1fr;
+        }
+        .contenedortitulo img{
+            left: 100px;
+        }
+        .contenedortitulo h2{
+            width: 100px;
+            font-size: 15px;
+        }
+        .redes img{
+            height: 20px;
+            width: 20px;
+        }
+        .redes h3{
+            font-size: 15px;
+            transition: 2s;
+        }
+    }
 
-    /*pagina americana*/
-    .contenedorimagenes{
-        height: 800px;
-        width: 100%
+/*cierra media rusa*/
+
+/*mediaquery americana*/
+@media screen and (max-width:986px){
+    .contenedortituloamericana img{
+        left: 300px;
+        transition: 2s;
+        height:50px;
+        width: 50px;
+        transition: 3s;
     }
-    .contenedorimagenes .tarjeta{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr ;
-        gap: 3px;
-        background-image: url(../img/fondo\ americana.webp);
+    .tituloamericana {
+        justify-content: start;
+        transition: 2s;
     }
-    .fotoamericana img{
-        height: 300px;
-        width: 300px;
-        color: coral;
+    .contenedortituloamericana h2{
+        width: 500px;
+        font-size: 30px;
+        transition: 2s;
     }
-    .fotoamericana h3{
-        font-size: 20px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .redes img{ 
+        height: 30px;
+        width: 30px;
     }
-    /*cierra pagina amricana*/
-    /*abre pagina semi */
+    .redes h3{
+        font-size: 15px;
+        transition: 2s;
+    }
+}
+
+    @media screen and (max-width:780px){
+        .contenedorimagenesamericanas {
+            width: 100%;
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+        }
+        .redes img{
+            width:30px;
+            height: 30px;
+            transition: 2s;
+        }
+    }
+        @media screen and (max-width:527px){
+            .contenedorimagenesamericanas{
+                grid-template-columns: 1fr;
+            }
+            .contenedortituloamericana img{
+                left: 70px;
+            }
+            .contenedortituloamericana h2{
+                width: 100px;
+                font-size: 15px;
+            }
+            .redes img{
+                height: 20px;
+                width: 20px;
+            }
+    } 
+
+
+/*cierra mediaquey americana */
     .contenedorimagenessemi{
         width: 100%;
     }
@@ -284,9 +465,6 @@
         height: 300px;
         width: 300px;
     }
-
-
-
 
 
 
