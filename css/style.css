@@ -10,34 +10,82 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-.hero {
-    color: aqua;
-    height: 200px;
-    width: 100%;
+.hero .menu {
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
 }
+.menu  a button{
+    font-family:'Great Vibes', cursive;
+    width: 80px;
+    font-size: 20px;
+    color: #322e2e;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% ;
+}
+.navlink li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Great Vibes', cursive;
+    font-size: 30px;
+}
+.navlink li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 5px 10px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+button:hover{
+    background-color: rgba(0, 135, 169, 0.17);
+
+}
+
+
+
+/**
 .hero .menu img{
     width: 80px;
     height: 80px;
     float: left;
     padding: 8px;
     top: 0;
-    left: 5px;
+}
+.hero nav ul {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    position: absolute;
 }
 
 .hero .menu nav ul li{
     list-style: none;
-    margin-left: 55px;
-    float: left;
     padding: 15px;
+    color: #a79393;
 }
 .hero .menu nav ul li a{
     width: 100%;
     text-decoration: none;
-    color: rgb(224, 207, 207);
+    color: rgb(232, 214, 214);
     font-weight: bold;
     position: absolute;
     top: 0;
+    background-color: #000;
 }
+/**/
 
 .hero {
     background-color: rgb(237, 216, 216);
@@ -50,23 +98,6 @@
     background-position: center;
     background-attachment: fixed;
     font-family: 'Noto Sans JP', sans-serif;
-}
-
-/* abre header */
-.hero nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    position: absolute;
-}
-
-.barranav ul li a {
-    color: rgb(222, 12, 12);
-    font-size: 15px;
-    display: flex;
-    position: absolute;
-    top: 10px;
-    text-decoration: none;
 }
 
 .hero  img {
@@ -87,11 +118,6 @@
     position: absolute;
     top: 60px;
     left: 30px;
-    top: 0;
-}
-.aside{
-    display: flex;
-    flex-direction: column;
     top: 0;
 }
 .main{
@@ -132,7 +158,7 @@
     display: block;
     width:100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(249, 115, 115, 0.467), rgba(242, 74, 80, 0.581));
+    background: linear-gradient(to bottom, rgba(225, 94, 94, 0.459), rgba(242, 74, 80, 0.213));
     z-index: 2;
     transition:0.5s all;
     opacity:1;
