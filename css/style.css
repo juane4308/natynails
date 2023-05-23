@@ -53,40 +53,6 @@ button:hover{
     background-color: rgba(0, 135, 169, 0.17);
 
 }
-
-
-
-/**
-.hero .menu img{
-    width: 80px;
-    height: 80px;
-    float: left;
-    padding: 8px;
-    top: 0;
-}
-.hero nav ul {
-    display: flex;
-    justify-content: space-between;
-    width:100%;
-    position: absolute;
-}
-
-.hero .menu nav ul li{
-    list-style: none;
-    padding: 15px;
-    color: #a79393;
-}
-.hero .menu nav ul li a{
-    width: 100%;
-    text-decoration: none;
-    color: rgb(232, 214, 214);
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    background-color: #000;
-}
-/**/
-
 .hero {
     background-color: rgb(237, 216, 216);
     background-image: url(../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
@@ -112,14 +78,6 @@ button:hover{
     background-attachment: fixed;
 }
 
-.hero h1 {
-    display: flex;
-    justify-content: left;
-    position: absolute;
-    top: 60px;
-    left: 30px;
-    top: 0;
-}
 .main{
     top: 20px;
     width: 100%;
