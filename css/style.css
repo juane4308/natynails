@@ -61,7 +61,7 @@ button:hover{
 }
 .hero {
     background-color: rgb(237, 216, 216);
-    background-image: url(../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
+    background-image: url(../img/chelsontamares.jpg);
     width: 100%;
     height: 500px;
     margin-top: 0px;
@@ -245,25 +245,100 @@ button:hover{
 }
 /*cierra page rusas*/
 /*footer*/
-.redes div {
-    display: flex;
-    justify-content: end;
-    justify-content: space-around;
-    background-color: coral;
-    height: 100px;
+.piepagina{
     width: 100%;
-    font-family:'Great Vibes', cursive;
+    height: 400px;
+    background-color: #eda7a7;
+}
+.piepagina .grupouno{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.piepagina .grupouno .box figure a img{
+    height: 200px;
+    width: 200px;
+}
+.piepagina .grupouno .box h3{
+    color: antiquewhite;
+    margin-bottom: 25px;
     font-size: 20px;
 }
-.redes div p{
-    font-family:'Great Vibes', cursive;
-    font-size: 20px;
-    flex-wrap: wrap;
+.piepagina .grupouno .box p{
+    color: #efefef;
 }
-.redes h3{
-    font-family:'Great Vibes', cursive;
+.redsocial a img{
+    height: 60px;
+    width: 60px;
+    transition: all 200ms ease;
+}
+.redsocial a img:hover{
+    height: 100px;
+    width: 100px;
+}
+.grupodos small{
+    color: antiquewhite;
+    margin-left: 80px;
+}
+
+/*pagina semi*/
+
+.titulosemipermanente {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: coral;
 }
+.contenedortitulosemipermanente h2{
+    width: 600px;
+    font-family:'Great Vibes', cursive;
+    margin: 15px;
+    font-size: 60px;
+    background-color: rgba(239, 152, 120, 0.823);
+    position: relative;
+}
+
+.contenedorimagenessemipermanente{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(255, 127, 80, 0.558);
+}
+
+.contenedortitulosemipermanente img{
+    height: 80px;
+    width: 80px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 510px;
+    right: 400px;
+}
+.tarjetasemipermanente img{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(255, 127, 80, 0.839);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transform: 0.3s  ease-in-out;
+    border: solid 3px black;
+    background-size: cover;
+    background-position: center;
+}
+.tarjetasemipermanente:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+/*cierra pagina semi*/
 
 /*pagina americna*/
 .tituloamericana{
@@ -381,7 +456,6 @@ button:hover{
         transition: 2s;
         height:50px;
         width: 50px;
-        transition: 3s;
     }
     .tituloamericana {
         justify-content: start;
@@ -520,6 +594,20 @@ button:hover{
             font-size: 10px;
             top: 0px;
         }
+        .piepagina .grupouno{
+            width: 1000px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            padding: 25px 0px;
+        }
+        .piepagina .grupouno .box figure a img  {
+            height: 50px;
+            width: 50px;
+        }
+        .redsocial a img{
+            height: 20px;
+            width: 20px;
+        }
     }
     @media screen and (max-width:420px){
         .parrafotarjeta h2{
@@ -548,20 +636,20 @@ button:hover{
 
 /*comienza mediaquery semi */
 @media screen and (max-width:986px){
-    .contenedortitulosemi  img{
-        left: 300px;
+    .titulosemipermanente .contenedortitulosemipermanente img{
+        left: 100px;
         transition: 2s;
         height:50px;
         width: 50px;
         transition: 3s;
     }
-    .titulosemi{
+    .titulosemipermanente {
         justify-content: start;
         transition: 2s;
     }
-    .contenedortitulosemi h2{
-        width: 500px;
-        font-size: 30px;
+    .titulosemipermanente .contenedortitulosemipermanente h2{
+        width: 100px;
+        font-size: 20px;
         transition: 2s;
     }
     .redes img{ 
@@ -575,10 +663,14 @@ button:hover{
 }
 
     @media screen and (max-width:780px){
-        .contenedorimagenessemi{
+
+        .contenedorimagenessemipermanente{
             width: 100%;
-            margin: 0;
-            grid-template-columns: 1fr 1fr;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* grid-template-columns:1fr 1fr; */
+            
         }
         .redes img{
             width:30px;
@@ -587,13 +679,14 @@ button:hover{
         }
     }
         @media screen and (max-width:527px){
-            .contenedorimagenessemi {
-                grid-template-columns: 1fr;
+            .contenedorimagenessemipermanente{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
             }
-            .contenedortitulosemi img{
+            .titulosemipermanente .contenedortitulosemipermanente img{
                 left: 70px;
             }
-            .contenedortitulosemi h2{
+            .contenedortitulosemipermanente h2{
                 width: 100px;
                 font-size: 15px;
             }
@@ -602,8 +695,8 @@ button:hover{
                 width: 20px;
             }
     }
-
     /*cierra medi queri semi*/
+
     /*madia query pagina direccion*/
     @media screen and (max-width:1114px){
         .mainmapa{
@@ -628,55 +721,7 @@ button:hover{
     }
 
 
-/*pagina semi*/
 
-.titulosemi {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: coral;
-}
-.contenedortitulosemi h2{
-    width: 600px;
-    font-family:'Great Vibes', cursive;
-    margin: 15px;
-    font-size: 60px;
-    background-color: rgba(239, 152, 120, 0.823);
-    position: relative;
-}
-.contenedortitulosemi img{
-    height: 80px;
-    width: 80px;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: 510px;
-    right: 400px;
-}
-.tarjetasemi img{
-    height: 250px;
-    width: 250px;
-    background-color: rgba(255, 127, 80, 0.839);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transform: 0.3s  ease-in-out;
-    border: solid 3px black;
-    background-size: cover;
-    background-position: center;
-}
-.tarjetasemi:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-.contenedorimagenessemi{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    padding: 10px;
-    background-color: rgba(255, 127, 80, 0.558);
-}
 
 /*pagina direccion*/
 .mainmapa{
@@ -733,3 +778,4 @@ button:hover{
     border-radius: 15px;
     margin-top: 50px;
 }
+/*cierra pagina dirreccion*/

@@ -432,13 +432,51 @@ main .contenedorimagenessemi .tarjetasemi:hover .tarjetasemi {
   font-family: 'Great Vibes', cursive;
 }
 
-.redes {
-  display: flex;
-  justify-content: end;
-  justify-content: space-around;
-  background-color: #9c8f8f;
-  height: 100%;
+.piedepagina {
   width: 100%;
+  height: 400px;
+  background-color: #eda7a7;
+}
+
+.piedepagina .grupouno {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.piedepagina .grupouno .box figure a img {
+  height: 200px;
+  width: 200px;
+}
+
+.piedepagina .grupouno .box h3 {
+  color: antiquewhite;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.piedepagina .grupouno .box .redsocial a img {
+  height: 60px;
+  width: 60px;
+  transition: all 200ms ease;
+}
+
+.piedepagina .grupouno .box .redsocial a:hover img {
+  height: 100px;
+  width: 100px;
+}
+
+.piedepagina .grupouno .box p {
+  color: #efefef;
+}
+
+.piedepagina .grupodos small {
+  color: antiquewhite;
+  margin-left: 80px;
 }
 
 /* media query index */
@@ -540,6 +578,23 @@ main .contenedorimagenessemi .tarjetasemi:hover .tarjetasemi {
     font-size: 15px;
     display: flex;
     flex-direction: column;
+  }
+
+  .piepagina .grupouno {
+    width: 1000px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 25px 0px;
+  }
+
+  .piepagina .grupouno .box img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .redsocial img {
+    height: 20px;
+    width: 20px;
   }
 }
 

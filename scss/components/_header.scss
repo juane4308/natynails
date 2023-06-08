@@ -1,61 +1,69 @@
-.hero{
-    background-color:nth($colores, 1);
+.hero {
+    background-color: nth($colores, 1);
     background-image: url(../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
     width: 100%;
-    height:nth($heigth, 7);
+    height: nth($heigth, 7);
     margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Noto Sans JP', sans-serif;
-    img{
+
+    img {
         filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    height:nth($heigth, 4) ;
-    width:nth($width, 3);
-    display: flex;
-    position: absolute;
-    top: 140px;
-    left: 500px;
-    background-attachment: fixed;
+        mix-blend-mode: multiply;
+        height: nth($heigth, 4);
+        width: nth($width, 3);
+        display: flex;
+        position: absolute;
+        top: 140px;
+        left: 500px;
+        background-attachment: fixed;
     }
-    button{
+
+    button {
         padding: 5px 10px;
-        background-color:nth($colores, 2);
+        background-color: nth($colores, 2);
         border: none;
         border-radius: 80px;
         cursor: pointer;
         transition: all 0.3 ease 0s;
-        &:hover button{
+
+        &:hover button {
             background-color: rgba(0, 135, 169, 0.17);
         }
     }
-    .menu{
+
+    .menu {
         margin: 0;
         padding: 0;
         background-color: coral;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 10% ;
-        h1{
+        padding: 30px 10%;
+
+        h1 {
             color: #fff;
-    font-family:'Great Vibes', cursive
+            font-family: 'Great Vibes', cursive
         }
-        .navlink{
-            ul{
-                li{
+
+        .navlink {
+            ul {
+                li {
                     display: inline-block;
                     padding: 0px 20px;
-                    a{
+
+                    a {
                         transition: all 0.3 ease 0s;
                         text-decoration: none;
                         list-style: none;
-                        font-family:'Great Vibes', cursive;
+                        font-family: 'Great Vibes', cursive;
                         font-size: 30px;
                         color: #0d0b0bd0;
-                        &hover a{
+
+                        &hover a {
                             color: #0088a9;
                         }
                     }

@@ -1,8 +1,54 @@
-.redes {
-    display: flex;
-    justify-content: end;
-    justify-content: space-around;
-    background-color: rgb(156, 143, 143);
-    height: 100%;
+.piedepagina{
     width: 100%;
+    height: 400px;
+    background-color: #eda7a7;
+    .grupouno{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .box{
+            figure{
+                a{
+                    img{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+        .box{
+            h3{
+                color: antiquewhite;
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            .redsocial{
+                a{
+                    img{
+                        height: 60px;
+                        width: 60px;
+                        transition: all 200ms ease;
+                    }
+                    &:hover img{
+                        height: 100px;
+                        width: 100px;
+                    }
+                }
+            }
+            p{
+                color: #efefef;
+            }
+        }
+    }
+    .grupodos{
+        small{
+            color: antiquewhite;
+            margin-left: 80px;
+
+        }
+    }
 }
