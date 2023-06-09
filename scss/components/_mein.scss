@@ -236,15 +236,15 @@ main {
 }
 
 /*main pagina semipermanente*/
-main {
-    .contenedorimagenessemi {
+.mainsemi {
+    .contenedorimagenessemipermanente {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
 
-        .tarjetasemi {
+        .tarjetasemipermanente {
             img {
                 height: nth($heigth, 4);
                 width: nth($width, 3);
@@ -259,7 +259,7 @@ main {
                 background-position: center;
             }
 
-            &:hover .tarjetasemi {
+            &:hover .tarjetasemipermanente {
                 filter: opacity(0.9);
                 transform: scale(1.04);
             }
@@ -267,8 +267,8 @@ main {
     }
 }
 
-.titulosemi {
-    .contenedortitulosemi {
+.titulosemipermanente {
+    .contenedortitulosemipermanente {
         h2 {
             width: nth($width, 6);
             font-family: 'Great Vibes', cursive;

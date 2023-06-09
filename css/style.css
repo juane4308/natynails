@@ -264,12 +264,12 @@ button:hover{
     width: 200px;
 }
 .piepagina .grupouno .box h3{
-    color: antiquewhite;
+    color: rgb(21, 20, 19);
     margin-bottom: 25px;
     font-size: 20px;
 }
 .piepagina .grupouno .box p{
-    color: #efefef;
+    color: #473e3e;
 }
 .redsocial a img{
     height: 60px;
@@ -277,11 +277,12 @@ button:hover{
     transition: all 200ms ease;
 }
 .redsocial a img:hover{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    transition: 1s;
 }
 .grupodos small{
-    color: antiquewhite;
+    color: rgb(52, 49, 45);
     margin-left: 80px;
 }
 
@@ -548,7 +549,7 @@ button:hover{
             right: 50px;
         }
         .navlink li a{
-            font-size: 20px;
+            font-size: 30px;
             
         }
         .wrapper{
@@ -564,7 +565,7 @@ button:hover{
             font-size: 15px;
         }
         .card h2{
-            font-size: 25px;
+            font-size: 15px;
         }
         .card .info p{
             font-size: 0px;
@@ -609,7 +610,7 @@ button:hover{
             width: 20px;
         }
     }
-    @media screen and (max-width:420px){
+    @media screen and (max-width:502px){
         .parrafotarjeta h2{
             font-size: 15px;
         }
@@ -652,14 +653,7 @@ button:hover{
         font-size: 20px;
         transition: 2s;
     }
-    .redes img{ 
-        height: 30px;
-        width: 30px;
-    }
-    .redes h3{
-        font-size: 15px;
-        transition: 2s;
-    }
+    
 }
 
     @media screen and (max-width:780px){
@@ -669,13 +663,8 @@ button:hover{
             margin: 0px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            /* grid-template-columns:1fr 1fr; */
             
-        }
-        .redes img{
-            width:30px;
-            height: 30px;
-            transition: 2s;
+            
         }
     }
         @media screen and (max-width:527px){
@@ -690,10 +679,7 @@ button:hover{
                 width: 100px;
                 font-size: 15px;
             }
-            .redes img{
-                height: 20px;
-                width: 20px;
-            }
+            
     }
     /*cierra medi queri semi*/
 
