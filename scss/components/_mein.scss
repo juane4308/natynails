@@ -119,6 +119,7 @@ main {
     .contenedorimagenesrusas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
@@ -180,6 +181,7 @@ main {
     .contenedorimagenesamericanas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
@@ -240,6 +242,7 @@ main {
     .contenedorimagenessemipermanente {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        place-items: center;
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);

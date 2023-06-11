@@ -162,6 +162,7 @@
 main .contenedorimagenesrusas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   gap: 10px;
   padding: 10px;
   background-color: rgba(255, 127, 80, 0.558); }
@@ -206,6 +207,7 @@ main .contenedorimagenesrusas {
 main .contenedorimagenesamericanas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   gap: 10px;
   padding: 10px;
   background-color: rgba(255, 127, 80, 0.558); }
@@ -250,6 +252,7 @@ main .contenedorimagenesamericanas {
 .mainsemi .contenedorimagenessemipermanente {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   gap: 10px;
   padding: 10px;
   background-color: rgba(255, 127, 80, 0.558); }
@@ -387,10 +390,10 @@ main .contenedorimagenesamericanas {
     align-items: end;
     font-size: 100%; } }
 
-@media screen and (max-width: 898px) {
+@media screen and (max-width: 998px) {
   .hero img {
-    height: 100px;
-    width: 100px;
+    height: 0px;
+    width: 0px;
     top: 0; }
   .hero h1 {
     font-size: 0px;
@@ -416,10 +419,12 @@ main .contenedorimagenesamericanas {
     flex-direction: column; }
   .card {
     height: 180px;
-    width: 100px;
-    font-size: 15px; }
+    width: 200px;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 10px; }
     .card h2 {
-      font-size: 25px; }
+      font-size: 15px; }
     .card .info p {
       font-size: 0px; }
     .card .info a {
@@ -438,19 +443,34 @@ main .contenedorimagenesamericanas {
       font-size: 15px;
       display: flex;
       flex-direction: column; }
-  .piepagina .grupouno {
-    width: 1000px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
-    padding: 25px 0px; }
-    .piepagina .grupouno .box img {
-      height: 50px;
-      width: 50px; }
+  .piepagina {
+    position: relative;
+    font-size: 15px; }
+    .piepagina .grupouno {
+      width: 200px;
+      height: 800px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      padding: 25px 0px; }
+      .piepagina .grupouno .boxuno {
+        position: absolute;
+        top: 100px; }
+        .piepagina .grupouno .boxuno img {
+          height: 50px;
+          width: 50px; }
+      .piepagina .grupouno .boxdos {
+        position: absolute;
+        top: 290px; }
+    .piepagina .grupodos {
+      position: absolute;
+      top: 380px;
+      left: 0px;
+      font-size: 10px; }
   .redsocial img {
     height: 20px;
     width: 20px; } }
 
-@media screen and (max-width: 502px) {
+@media screen and (max-width: 650px) {
   .parrafotarjeta h2 {
     font-size: 15px; }
   .parrafotarjeta p {
@@ -462,7 +482,21 @@ main .contenedorimagenesamericanas {
     width: 80px;
     display: flex;
     position: absolute;
-    left: 0px; } }
+    left: 0px; }
+  .piepagina {
+    position: relative;
+    font-size: 15px; }
+    .piepagina .boxuno {
+      position: absolute;
+      top: 100px; }
+    .piepagina .boxdos {
+      position: absolute;
+      top: 290px; }
+  .grupodos {
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    font-size: 10px; } }
 
 /*cierra media query index*/
 /*comienza mediaquery americana */

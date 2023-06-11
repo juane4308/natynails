@@ -84,7 +84,7 @@ button:hover{
     background-attachment: fixed;
 }
 /*cierra header*/
-/*comiwnzo mein*/
+/*comienza mein*/
 .main{
     top: 20px;
     width: 100%;
@@ -211,13 +211,13 @@ button:hover{
     position: relative;
 }
 .contenedortitulo img{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     position: absolute;
-    top: 510px;
-    right: 400px;
+    top: 500px;
+    right: 600px;
 }
 .tarjetarusa img{
     height: 250px;
@@ -239,6 +239,7 @@ button:hover{
 .contenedorimagenesrusas{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    place-items: center;
     gap: 10px;
     padding: 10px;
     background-color: rgba(255, 127, 80, 0.558);
@@ -319,7 +320,7 @@ button:hover{
     mix-blend-mode: multiply;
     position: absolute;
     top: 510px;
-    right: 400px;
+    left:800px;
 }
 .tarjetasemipermanente img{
     height: 250px;
@@ -385,6 +386,7 @@ button:hover{
 .contenedorimagenesamericanas{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    place-items: center;
     gap: 10px;
     padding: 10px;
     background-color: rgba(255, 127, 80, 0.558);
@@ -432,7 +434,9 @@ button:hover{
             grid-template-columns: 1fr;
         }
         .contenedortitulo img{
-            left: 100px;
+            height: 40px;
+            width: 40px;
+            left: 120px;
         }
         .contenedortitulo h2{
             width: 100px;
@@ -494,6 +498,8 @@ button:hover{
                 grid-template-columns: 1fr;
             }
             .contenedortituloamericana img{
+                height: 40px;
+                width: 40px;
                 left: 70px;
             }
             .contenedortituloamericana h2{
@@ -525,7 +531,7 @@ button:hover{
         }
     }
 
-    @media screen and (max-width:898px) {
+    @media screen and (max-width:998px) {
         .hero img{
             height: 0px;
             width: 0px;
@@ -555,14 +561,17 @@ button:hover{
         .wrapper{
             font-size: 10px;
             display: flex;
-            justify-content: center;
-            align-items: start;
-            flex-direction: column;
+            justify-content:space-around;
+            flex-direction:row;
+            
+
         }
         .card{
             height: 180px;
-            width: 100px;
+            width: 200px;
             font-size: 15px;
+            margin-right: 5px;
+            margin-left: 10px;
         }
         .card h2{
             font-size: 15px;
@@ -580,15 +589,20 @@ button:hover{
             font-size: 5px;
             left: 5px;
         }
+        .parrafotarjeta{
+            margin-top: 150px;
+            position: absolute;
+            top: 550px;
+            left: 0px;
+        }
         .parrafotarjeta p{
             font-size: 15px;
             display: flex;
             flex-direction: column;
         }
         .parrafotarjeta img{
-            font-size: 15px;
-            display: flex;
-            flex-direction: column;
+            height: 100px;
+            width: 100px;
         }
         .menu  a button{
             width: 60px;
@@ -596,7 +610,8 @@ button:hover{
             top: 0px;
         }
         .piepagina .grupouno{
-            width: 1000px;
+            width: 200px;
+            height: 800px;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 10px;
             padding: 25px 0px;
@@ -609,8 +624,33 @@ button:hover{
             height: 20px;
             width: 20px;
         }
+        .piepagina{
+            position: relative;
+            font-size: 15px;
+        }
+        .boxuno{
+            position: absolute;
+            top: 100px;
+        }
+        .boxdos{
+            position: absolute;
+            top: 290px;
+        }
+        .grupodos{
+            position: absolute;
+            top: 380px;
+            left: 0px;
+            font-size: 10px;
+        }
     }
-    @media screen and (max-width:502px){
+    @media screen and (max-width:650px){
+        .card{
+            height: 180px;
+            width: 100px;
+            font-size: 15px;
+            margin-right: 5px;
+            margin-left: 10px;
+        }
         .parrafotarjeta h2{
             font-size: 15px;
         }
@@ -623,12 +663,30 @@ button:hover{
             height: 80px;
             width: 80px;
             display: flex;
-            position: absolute;
+            position: relative;
             left: 0px;
         }
         .hero img {
             height: 0;
             width: 0;
+        }
+        .piepagina{
+            position: relative;
+            font-size: 15px;
+        }
+        .boxuno{
+            position: absolute;
+            top: 100px;
+        }
+        .boxdos{
+            position: absolute;
+            top: 290px;
+        }
+        .grupodos{
+            position: absolute;
+            top: 380px;
+            left: 0px;
+            font-size: 10px;
         }
         
     }
@@ -673,7 +731,9 @@ button:hover{
                 grid-template-columns: repeat(1, 1fr);
             }
             .titulosemipermanente .contenedortitulosemipermanente img{
-                left: 70px;
+                width: 40px;
+                height: 40px;
+                left: 120px;
             }
             .contenedortitulosemipermanente h2{
                 width: 100px;
@@ -691,12 +751,12 @@ button:hover{
             font-size: 10px;
         }
         .mapa iframe{
-            width: 200px;
-            height: 200px;
+            width: 600px;
+            height: 600px;
         }
         .formregistro {
-            height: 300px;
-            width: 200px;
+            height: 500px;
+            width: 300px;
         }
         .formregistro input{
             width: 80px;
@@ -704,6 +764,12 @@ button:hover{
             font-size: 10px;
         }
         
+    }
+    @media screen and (max-width:998px){   
+        .mapa iframe{
+            width: 200px;
+            height: 300px;
+        }
     }
 
 
