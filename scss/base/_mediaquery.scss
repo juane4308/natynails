@@ -59,7 +59,7 @@
 
     .navlink {
         a {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
@@ -152,6 +152,11 @@
 }
 
 @media screen and (max-width:650px) {
+    .navlink {
+        a {
+            font-size: 25px;
+        }
+    }
     .parrafotarjeta {
         h2 {
             font-size: 15px;

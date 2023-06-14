@@ -410,7 +410,7 @@ main .contenedorimagenesamericanas {
     font-size: 10px;
     top: 0px; }
   .navlink a {
-    font-size: 30px; }
+    font-size: 40px; }
   .wrapper {
     font-size: 10px;
     display: flex;
@@ -471,6 +471,8 @@ main .contenedorimagenesamericanas {
     width: 20px; } }
 
 @media screen and (max-width: 650px) {
+  .navlink a {
+    font-size: 25px; }
   .parrafotarjeta h2 {
     font-size: 15px; }
   .parrafotarjeta p {

@@ -555,7 +555,7 @@ button:hover{
             right: 50px;
         }
         .navlink li a{
-            font-size: 30px;
+            font-size: 40px;
             
         }
         .wrapper{
@@ -650,6 +650,10 @@ button:hover{
             font-size: 15px;
             margin-right: 5px;
             margin-left: 10px;
+        }
+        .navlink li a{
+            font-size: 25px;
+            
         }
         .parrafotarjeta h2{
             font-size: 15px;
