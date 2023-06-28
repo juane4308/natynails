@@ -1,27 +1,19 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box; }
 
-.hero img {
-  filter: brightness(1.1);
-  mix-blend-mode: multiply;
-  height: 250px;
-  width: 250px;
-  display: flex;
-  position: absolute;
-  top: 140px;
-  left: 500px;
-  background-attachment: fixed; }
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
 
 /*variable hancho */
 /*colores*/
 .hero {
   background-color: #edd8d8;
-  background-image: url(../img/chelson-tamares-vtQHwU4F13s-unsplash.jpg);
+  background-image: url(../img/chelsontamares.jpg);
   width: 100%;
   height: 500px;
   margin-top: 0px;
@@ -40,15 +32,6 @@
     top: 140px;
     left: 500px;
     background-attachment: fixed; }
-  .hero button {
-    padding: 5px 10px;
-    background-color: #e8631c #edd8d8;
-    border: none;
-    border-radius: 80px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s; }
-    .hero button:hover button {
-      background-color: rgba(0, 135, 169, 0.17); }
   .hero .menu {
     margin: 0;
     padding: 0;
@@ -60,20 +43,34 @@
     .hero .menu h1 {
       color: #fff;
       font-family: 'Great Vibes', cursive; }
-    .hero .menu .navlink ul li {
-      display: inline-block;
-      padding: 0px 20px; }
-      .hero .menu .navlink ul li a {
-        transition: all 0.3 ease 0s;
-        text-decoration: none;
-        list-style: none;
-        font-family: 'Great Vibes', cursive;
-        font-size: 30px;
-        color: #0d0b0bd0; }
-        .hero .menu .navlink ul li ahover a {
-          color: #0088a9; }
+    .hero .menu a button {
+      font-family: 'Great Vibes', cursive;
+      width: 80px;
+      font-size: 20px;
+      color: #e8dcdc;
+      padding: 0px 0px;
+      background-color: rgba(233, 82, 27, 0.854);
+      border: none;
+      border-radius: 80px;
+      cursor: pointer;
+      transition: all 0.3 ease 0s; }
+    .hero .menu :hover button {
+      background-color: rgba(0, 135, 169, 0.17); }
 
-.mein {
+.navlink li {
+  display: inline-block;
+  padding: 0px 20px; }
+  .navlink li a {
+    transition: all 0.3 ease 0s;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Great Vibes', cursive;
+    font-size: 15px;
+    color: #0d0b0bd0; }
+  .navlink li:hover a {
+    color: #0088a9; }
+
+.main {
   top: 20px;
   width: 100%;
   height: 100%;
@@ -81,25 +78,25 @@
   justify-content: center;
   align-items: center;
   background: rgba(255, 127, 80, 0.647); }
-  .mein .parrafotarjeta h2 {
+  .main .parrafotarjeta h2 {
     font-family: 'Great Vibes', cursive; }
-  .mein .parrafotarjeta p {
+  .main .parrafotarjeta p {
     font-family: 'Great Vibes', cursive;
     font-size: 30px;
     left: 5px; }
-  .mein .parrafotarjeta img {
+  .main .parrafotarjeta img {
     height: 200px;
     width: 200px;
     border-radius: 80%;
     background-size: cover;
     border: 5px solid white;
     margin-left: 200px; }
-  .mein .wrapper {
+  .main .wrapper {
     display: flex;
     width: 80%;
     height: 400px;
     justify-content: space-around; }
-    .mein .wrapper .card {
+    .main .wrapper .card {
       width: 280px;
       height: 360px;
       padding: 2rem 1rem;
@@ -109,27 +106,28 @@
       align-items: flex-end;
       box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
       transition: 0.5s ease-in-out; }
-      .mein .wrapper .card img {
+      .main .wrapper .card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
         top: 0;
         left: 0; }
-      .mein .wrapper .card .info {
+      .main .wrapper .card .info {
         position: relative;
         z-index: 3;
-        color: #fff;
+        color: #281616;
         opacity: 0;
         transform: translateY(30px);
-        transition: 0.5s all; }
-        .mein .wrapper .card .info h2 {
+        transition: 0.5s all;
+        top: 170px; }
+        .main .wrapper .card .info h2 {
           margin: 0; }
-        .mein .wrapper .card .info p {
+        .main .wrapper .card .info p {
           letter-spacing: 1px;
           font-size: 15px;
           margin-top: 8px; }
-        .mein .wrapper .card .info .btn {
+        .main .wrapper .card .info .btn {
           text-decoration: none;
           padding: 0.5rem 1rem;
           background: #fff;
@@ -138,12 +136,12 @@
           font-weight: bold;
           cursor: pointer;
           transition: 0.4s ease-in-out; }
-      .mein .wrapper .card.card:hover .info {
+      .main .wrapper .card.card:hover .info {
         opacity: 1;
         transform: translateY(0px); }
-    .mein .wrapper:hover .card {
+    .main .wrapper:hover .card {
       transform: translateY(20px); }
-    .mein .wrapper:before .card {
+    .main .wrapper:before .card {
       content: "";
       position: absolute;
       top: 0px;
@@ -155,7 +153,7 @@
       z-index: 2;
       transition: 0.5s all;
       opacity: 1; }
-    .mein .wrapper:hover:before .card {
+    .main .wrapper:hover:before .card {
       opacity: 1; }
 
 /*main pagina rusa*/
@@ -340,11 +338,11 @@ main .contenedorimagenesamericanas {
   .mainmapa .parrafomapa h2 {
     font-family: 'Great Vibes', cursive; }
 
-.piedepagina {
+.piepagina {
   width: 100%;
   height: 400px;
   background-color: #eda7a7; }
-  .piedepagina .grupouno {
+  .piepagina .grupouno {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -352,97 +350,106 @@ main .contenedorimagenesamericanas {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px; }
-    .piedepagina .grupouno .box figure a img {
+    .piepagina .grupouno .box figure a img {
       height: 200px;
       width: 200px; }
-    .piedepagina .grupouno .box h3 {
-      color: antiquewhite;
+    .piepagina .grupouno .boxuno h3 {
+      color: #151413;
       margin-bottom: 25px;
       font-size: 20px; }
-    .piedepagina .grupouno .box .redsocial a img {
+    .piepagina .grupouno .boxuno P {
+      color: #473e3e; }
+    .piepagina .grupouno .boxdos h3 {
+      color: #151413;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .piepagina .grupouno .boxdos .redsocial a img {
       height: 60px;
       width: 60px;
       transition: all 200ms ease; }
-    .piedepagina .grupouno .box .redsocial a:hover img {
-      height: 100px;
-      width: 100px; }
-    .piedepagina .grupouno .box p {
-      color: #efefef; }
-  .piedepagina .grupodos small {
-    color: antiquewhite;
+    .piepagina .grupouno .boxdos .redsocial a:hover img {
+      height: 80px;
+      width: 80px;
+      transition: 1s; }
+  .piepagina .grupodos small {
+    color: #34312d;
     margin-left: 80px; }
 
 /* media query index */
 @media screen and (max-width: 1190px) {
-  .hero nav {
-    background: none;
-    height: 20%;
-    width: 20%; }
-  .hero img {
-    height: 300px;
-    width: 300px;
-    top: 50px;
-    left: 0; }
-  .barranav a {
-    color: black;
-    position: absolute; }
-  .parrafo {
-    align-items: end;
-    font-size: 100%; } }
-
-@media screen and (max-width: 998px) {
   .hero img {
     height: 0px;
-    width: 0px;
-    top: 0; }
-  .hero h1 {
+    width: 0px; }
+  .hero .menu h1 {
+    font-size: 20px;
+    display: flex;
+    padding-top: 0px;
     font-size: 0px;
     margin-top: 50px;
-    transition: 5s;
+    position: relative; } }
+
+@media screen and (max-width: 998px) {
+  .hero .menu .cta {
+    height: 30px;
+    width: 30px; }
+    .hero .menu .cta .boton {
+      padding: 0;
+      height: 0px;
+      width: 0px;
+      font-size: 0px;
+      position: absolute;
+      right: 50px; }
+  .hero .menu h1 {
+    font-size: 0px;
+    margin-top: 50px;
     position: relative; }
-  .cta button {
-    height: 50px;
-    width: 20px;
-    font-size: 15px;
-    position: absolute;
-    left: 0px;
+  .hero .menu .navlink nav div button {
     width: 60px;
     font-size: 10px;
     top: 0px; }
-  .navlink a {
+  .hero .menu .navlink nav div div ul li a {
     font-size: 40px; }
-  .wrapper {
+  .direccionlogo img {
+    height: 0px;
+    width: 0px;
+    top: 0; }
+  .main .wrapper {
     font-size: 10px;
     display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column; }
-  .card {
-    height: 180px;
-    width: 200px;
-    font-size: 15px;
-    margin-right: 5px;
-    margin-left: 10px; }
-    .card h2 {
-      font-size: 15px; }
-    .card .info p {
-      font-size: 0px; }
-    .card .info a {
-      width: 80px;
-      height: 30px; }
-    .card .btn {
-      display: flex;
-      flex-direction: row;
-      font-size: 5px;
-      left: 5px; }
-    .card .parrafotarjeta p {
+    justify-content: space-around;
+    flex-direction: row; }
+    .main .wrapper .card {
+      height: 180px;
+      width: 200px;
+      font-size: 15px;
+      margin-right: 5px;
+      margin-left: 10px; }
+      .main .wrapper .card .info {
+        top: 50px; }
+        .main .wrapper .card .info h2 {
+          font-size: 15px; }
+        .main .wrapper .card .info p {
+          font-size: 0px; }
+        .main .wrapper .card .info a {
+          width: 80px;
+          height: 30px; }
+        .main .wrapper .card .info .btn {
+          display: flex;
+          flex-direction: row;
+          font-size: 5px;
+          left: 5px; }
+  .main .parrafotarjeta {
+    margin-top: 150px;
+    position: absolute;
+    top: 530px;
+    left: 0px; }
+    .main .parrafotarjeta p {
       font-size: 15px;
       display: flex;
       flex-direction: column; }
-    .card .parrafotarjeta img {
-      font-size: 15px;
-      display: flex;
-      flex-direction: column; }
+    .main .parrafotarjeta img {
+      height: 80px;
+      width: 80px; }
   .piepagina {
     position: relative;
     font-size: 15px; }
@@ -452,144 +459,232 @@ main .contenedorimagenesamericanas {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 10px;
       padding: 25px 0px; }
+      .piepagina .grupouno .box figure a img {
+        height: 50px;
+        width: 50px; }
       .piepagina .grupouno .boxuno {
         position: absolute;
         top: 100px; }
-        .piepagina .grupouno .boxuno img {
-          height: 50px;
-          width: 50px; }
       .piepagina .grupouno .boxdos {
         position: absolute;
         top: 290px; }
+        .piepagina .grupouno .boxdos .redsocial a img {
+          height: 20px;
+          width: 20px; }
     .piepagina .grupodos {
       position: absolute;
       top: 380px;
       left: 0px;
-      font-size: 10px; }
-  .redsocial img {
-    height: 20px;
-    width: 20px; } }
+      font-size: 10px; } }
 
 @media screen and (max-width: 650px) {
-  .navlink a {
-    font-size: 25px; }
-  .parrafotarjeta h2 {
-    font-size: 15px; }
-  .parrafotarjeta p {
-    display: flex;
-    justify-content: start;
+  .hero .menu .cta {
+    height: 30px;
+    width: 30px; }
+    .hero .menu .cta .boton {
+      padding: 0;
+      height: 0px;
+      width: 0px;
+      font-size: 0px;
+      position: absolute;
+      right: 50px; }
+  .hero .menu h1 {
+    font-size: 0px;
+    margin-top: 50px;
     position: relative; }
-  .parrafotarjeta img {
-    height: 80px;
-    width: 80px;
+  .hero .menu .navlink nav div button {
+    width: 60px;
+    font-size: 10px;
+    top: 0px; }
+  .hero .menu .navlink nav div div ul li a {
+    font-size: 25px; }
+  .direccionlogo img {
+    height: 0;
+    width: 0; }
+  .main .wrapper {
+    font-size: 10px;
     display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    .main .wrapper .card {
+      height: 180px;
+      width: 100px;
+      font-size: 15px;
+      margin-right: 5px;
+      margin-left: 10px; }
+      .main .wrapper .card .info h2 {
+        font-size: 15px; }
+      .main .wrapper .card .info p {
+        font-size: 0px; }
+      .main .wrapper .card .info a {
+        width: 80px;
+        height: 30px; }
+      .main .wrapper .card .info .btn {
+        display: flex;
+        flex-direction: row;
+        font-size: 5px;
+        left: 5px; }
+  .main .parrafotarjeta {
+    margin-top: 150px;
     position: absolute;
+    top: 530px;
     left: 0px; }
+    .main .parrafotarjeta p {
+      display: flex;
+      justify-content: start;
+      position: relative; }
+    .main .parrafotarjeta h2 {
+      font-size: 15px; }
+    .main .parrafotarjeta img {
+      height: 80px;
+      width: 80px;
+      display: flex;
+      position: relative;
+      left: 0px; }
   .piepagina {
     position: relative;
     font-size: 15px; }
-    .piepagina .boxuno {
+    .piepagina .grupouno {
+      width: 200px;
+      height: 800px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      padding: 25px 0px; }
+      .piepagina .grupouno .box figure a img {
+        height: 50px;
+        width: 50px; }
+      .piepagina .grupouno .boxuno {
+        position: absolute;
+        top: 100px; }
+      .piepagina .grupouno .boxdos {
+        position: absolute;
+        top: 290px; }
+        .piepagina .grupouno .boxdos .redsocial a img {
+          height: 20px;
+          width: 20px; }
+    .piepagina .grupodos {
       position: absolute;
-      top: 100px; }
-    .piepagina .boxdos {
-      position: absolute;
-      top: 290px; }
-  .grupodos {
-    position: absolute;
-    top: 380px;
-    left: 0px;
-    font-size: 10px; } }
+      top: 380px;
+      left: 0px;
+      font-size: 10px; } }
 
 /*cierra media query index*/
 /*comienza mediaquery americana */
 @media screen and (max-width: 986px) {
-  .contenedortituloamericana img {
+  main .tituloamericana {
+    justify-content: start;
+    transition: 2s; }
+    main .tituloamericana .contenedortituloamericana h2 {
+      width: 500px;
+      font-size: 30px;
+      transition: 2s; }
+    main .tituloamericana .contenedortituloamericana img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px;
+      transition: 2s; }
+  main .contenedorimagenesamericanas .tarjetaamericana img {
     left: 300px;
     transition: 2s;
     height: 50px;
-    width: 50px;
-    transition: 3s; }
-  .contenedortituloamericana h2 {
-    width: 500px;
-    font-size: 30px;
-    transition: 2s; }
-  .tituloamericana {
-    justify-content: start;
-    transition: 2s; }
-  .redes img {
-    height: 30px;
-    width: 30px; }
-  .redes h3 {
-    font-size: 15px;
-    transition: 2s; } }
+    width: 50px; } }
 
 @media screen and (max-width: 780px) {
-  .contenedorimagenesamericana {
+  main .tituloamericana {
+    justify-content: start;
+    transition: 2s; }
+    main .tituloamericana .contenedortituloamericana h2 {
+      width: 500px;
+      font-size: 30px;
+      transition: 2s; }
+  main .contenedorimagenesamericanas {
     width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr; }
-  .redes img {
-    width: 30px;
-    height: 30px;
-    transition: 2s; } }
+    main .contenedorimagenesamericanas .tarjetaamericana img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }
 
 @media screen and (max-width: 527px) {
-  .contenedorimagenesamericanas {
-    grid-template-columns: 1fr; }
-    .contenedorimagenesamericanas img {
-      left: 70px; }
-    .contenedorimagenesamericanas h2 {
+  main .tituloamericana {
+    justify-content: start;
+    transition: 2s; }
+    main .tituloamericana .contenedortituloamericana h2 {
       width: 100px;
       font-size: 15px; }
-  .redes img {
-    height: 20px;
-    width: 20px; } }
+    main .tituloamericana .contenedortituloamericana img {
+      height: 40px;
+      width: 40px;
+      left: 70px; }
+  main .contenedorimagenesamericanas {
+    grid-template-columns: 1fr; }
+    main .contenedorimagenesamericanas .tarjetaamericana img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }
 
 /*cierra media query americana*/
 /*mediaquery rusa*/
 @media screen and (max-width: 986px) {
-  .contenedortitulo h2 {
-    width: 500px;
-    font-size: 30px;
+  main .titulorusa {
+    justify-content: start;
     transition: 2s; }
-  .contenedortitulo img {
+    main .titulorusa .contenedortitulo h2 {
+      width: 500px;
+      font-size: 30px;
+      transition: 2s; }
+    main .titulorusa .contenedortitulo img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px;
+      transition: 2s; }
+  main .contenedorimagenesrusas .tarjetarusa img {
     left: 300px;
     transition: 2s;
     height: 50px;
-    width: 50px;
-    transition: 2s; }
-  .titulorusa {
-    justify-content: start;
-    transition: 2s; }
-  .redes img {
-    height: 30px;
-    width: 30px;
-    transition: 2s; } }
+    width: 50px; } }
 
 @media screen and (max-width: 780px) {
-  .contenedorimagenesrusas {
+  main .titulorusa {
+    justify-content: start;
+    transition: 2s; }
+    main .titulorusa .contenedortitulo h2 {
+      width: 500px;
+      font-size: 30px;
+      transition: 2s; }
+  main .contenedorimagenesrusas {
     width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr; }
-  .redes img {
-    width: 30px;
-    height: 30px;
-    transition: 2s; } }
+    main .contenedorimagenesrusas .tarjetarusa img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }
 
 @media screen and (max-width: 527px) {
-  .contenedorimagenesrusas {
+  main .titulorusa {
+    justify-content: start;
+    transition: 2s; }
+    main .titulorusa .contenedortitulo h2 {
+      width: 100px;
+      font-size: 15px; }
+    main .titulorusa .contenedortitulo img {
+      height: 40px;
+      width: 40px;
+      left: 70px; }
+  main .contenedorimagenesrusas {
     grid-template-columns: 1fr; }
-  .contenedortitulo img {
-    left: 100px; }
-  .contenedortitulo h2 {
-    width: 100px;
-    font-size: 15px; }
-  .redes img {
-    height: 20px;
-    width: 20px; }
-  .redes h3 {
-    font-size: 15px;
-    transition: 2s; } }
+    main .contenedorimagenesrusas .tarjetarusa img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }
 
 /*cierra media rusa*/
 /*media query direccion */
@@ -610,33 +705,58 @@ main .contenedorimagenesamericanas {
 
 /*media query semipemanente*/
 @media screen and (max-width: 986px) {
-  .meinsemi .titulosemipermanente {
+  .mainsemi .titulosemipermanente {
     justify-content: start;
     transition: 2s; }
-    .meinsemi .titulosemipermanente .contenedortitulosemipermanente h2 {
-      width: 100px;
-      font-size: 20px;
+    .mainsemi .titulosemipermanente .contenedortitulosemipermanente h2 {
+      width: 500px;
+      font-size: 30px;
       transition: 2s; }
-    .meinsemi .titulosemipermanente .contenedortitulosemipermanente img {
-      left: 100px;
+    .mainsemi .titulosemipermanente .contenedortitulosemipermanente img {
+      left: 300px;
       transition: 2s;
       height: 50px;
       width: 50px;
-      transition: 3s; } }
+      transition: 2s; }
+  .mainsemi .contenedorimagenessemipermanente .tarjetasemipermanente img {
+    left: 300px;
+    transition: 2s;
+    height: 50px;
+    width: 50px; } }
 
 @media screen and (max-width: 780px) {
-  .meinsemi .contenedorimagenessemipermanente {
+  .mainsemi .titulosemipermanente {
+    justify-content: start;
+    transition: 2s; }
+    .mainsemi .titulosemipermanente .contenedortitulosemipermanente h2 {
+      width: 500px;
+      font-size: 30px;
+      transition: 2s; }
+  .mainsemi .contenedorimagenessemipermanente {
     width: 100%;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); } }
+    margin: 0;
+    grid-template-columns: 1fr 1fr; }
+    .mainsemi .contenedorimagenessemipermanente .tarjetasemipermanente img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }
 
 @media screen and (max-width: 527px) {
-  .meinsemi .titulosemipermanente .contenedortitulosemipermanente h2 {
-    width: 100px;
-    font-size: 15px; }
-  .meinsemi .titulosemipermanente .contenedortitulosemipermanente img {
-    left: 70px; }
-  .meinsemi .contenedorimagenessemipermanente {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); } }
+  .mainsemi .titulosemipermanente {
+    justify-content: start;
+    transition: 2s; }
+    .mainsemi .titulosemipermanente .contenedortitulosemipermanente h2 {
+      width: 100px;
+      font-size: 15px; }
+    .mainsemi .titulosemipermanente .contenedortitulosemipermanente img {
+      height: 40px;
+      width: 40px;
+      left: 70px; }
+  .mainsemi .contenedorimagenessemipermanente {
+    grid-template-columns: 1fr; }
+    .mainsemi .contenedorimagenessemipermanente .tarjetasemipermanente img {
+      left: 300px;
+      transition: 2s;
+      height: 50px;
+      width: 50px; } }

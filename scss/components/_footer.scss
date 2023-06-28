@@ -1,8 +1,7 @@
-.piedepagina{
+.piepagina{
     width: 100%;
     height: 400px;
     background-color: #eda7a7;
-    
     .grupouno{
         width: 100%;
         max-width: 1200px;
@@ -21,9 +20,19 @@
                 }
             }
         }
-        .box{
+        .boxuno{
             h3{
-                color: antiquewhite;
+                color: rgb(21, 20, 19);
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+            P{
+                color: #473e3e;
+            }
+        }
+        .boxdos{
+            h3{
+                color: rgb(21, 20, 19);
                 margin-bottom: 25px;
                 font-size: 20px;
             }
@@ -35,21 +44,19 @@
                         transition: all 200ms ease;
                     }
                     &:hover img{
-                        height: 100px;
-                        width: 100px;
+                        height: 80px;
+                        width: 80px;
+                        transition: 1s;
                     }
                 }
-            }
-            p{
-                color: #efefef;
             }
         }
     }
     .grupodos{
         small{
-            color: antiquewhite;
+            color: rgb(52, 49, 45);
             margin-left: 80px;
-
+            b{}
         }
     }
 }

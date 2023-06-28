@@ -1,4 +1,4 @@
-.mein {
+.main {
     top: 20px;
     width: 100%;
     height: 100%;
@@ -6,18 +6,15 @@
     justify-content: center;
     align-items: center;
     background: rgba(255, 127, 80, 0.647);
-
     .parrafotarjeta {
         h2 {
             font-family: 'Great Vibes', cursive;
         }
-
         p {
             font-family: 'Great Vibes', cursive;
             font-size: 30px;
             left: 5px;
         }
-
         img {
             height: nth($heigth, 3);
             width: nth($width, 2);
@@ -27,13 +24,11 @@
             margin-left: 200px;
         }
     }
-
     .wrapper {
         display: flex;
         width: 80%;
         height: nth($heigth, 6);
         justify-content: space-around;
-
         .card {
             width: nth($width, 4);
             height: nth($heigth, 5);
@@ -44,7 +39,6 @@
             align-items: flex-end;
             box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
             transition: 0.5s ease-in-out;
-
             img {
                 width: 100%;
                 height: 100%;
@@ -53,25 +47,22 @@
                 top: 0;
                 left: 0;
             }
-
             .info {
                 position: relative;
                 z-index: 3;
-                color: #fff;
+                color: #281616;
                 opacity: 0;
                 transform: translateY(30px);
                 transition: 0.5s all;
-
+                top: 170px;
                 h2 {
                     margin: 0;
                 }
-
                 p {
                     letter-spacing: 1px;
                     font-size: 15px;
                     margin-top: 8px;
                 }
-
                 .btn {
                     text-decoration: none;
                     padding: 0.5rem 1rem;
@@ -83,17 +74,14 @@
                     transition: 0.4s ease-in-out;
                 }
             }
-
             &.card:hover .info {
                 opacity: 1;
                 transform: translateY(0px);
             }
         }
-
         &:hover .card {
             transform: translateY(20px);
         }
-
         &:before .card {
             content: "";
             position: absolute;
@@ -107,7 +95,6 @@
             transition: 0.5s all;
             opacity: 1;
         }
-
         &:hover:before .card {
             opacity: 1;
         }
@@ -123,7 +110,6 @@ main {
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
-
         .tarjetarusa {
             img {
                 height: nth($heigth, 4);
@@ -138,7 +124,6 @@ main {
                 background-size: cover;
                 background-position: center;
             }
-
             &:hover .tarjetarusa {
                 filter: opacity(0.9);
                 transform: scale(1.04);
@@ -157,7 +142,6 @@ main {
             background-color: rgba(239, 152, 120, 0.823);
             position: relative;
         }
-
         img {
             height: nth($heigth, 2);
             width: nth($width, 1);
@@ -168,7 +152,6 @@ main {
             right: 400px;
         }
     }
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -185,7 +168,6 @@ main {
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
-
         .tarjetaamericana {
             img {
                 height: nth($heigth, 4);
@@ -200,7 +182,6 @@ main {
                 background-size: cover;
                 background-position: center;
             }
-
             &:hover .tarjetaamericana {
                 filter: opacity(0.9);
                 transform: scale(1.04);
@@ -219,7 +200,6 @@ main {
             background-color: rgba(239, 152, 120, 0.823);
             position: relative;
         }
-
         img {
             height: nth($heigth, 2);
             width: nth($width, 1);
@@ -230,7 +210,6 @@ main {
             right: 400px;
         }
     }
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -246,7 +225,6 @@ main {
         gap: 10px;
         padding: 10px;
         background-color: rgba(255, 127, 80, 0.558);
-
         .tarjetasemipermanente {
             img {
                 height: nth($heigth, 4);
@@ -261,7 +239,6 @@ main {
                 background-size: cover;
                 background-position: center;
             }
-
             &:hover .tarjetasemipermanente {
                 filter: opacity(0.9);
                 transform: scale(1.04);
@@ -280,7 +257,6 @@ main {
             background-color: rgba(239, 152, 120, 0.823);
             position: relative;
         }
-
         img {
             height: nth($heigth, 2);
             width: nth($width, 1);
@@ -291,7 +267,6 @@ main {
             right: 400px;
         }
     }
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -303,7 +278,6 @@ main {
     background-color: coral;
     display: flex;
     justify-content: space-around;
-
     .controles {
         width: nth($width, 2);
         background: #24303c;
@@ -314,7 +288,6 @@ main {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
     }
-
     .formregistro {
         width: nth($width, 5);
         background-color: rgb(241, 189, 170);
@@ -325,32 +298,27 @@ main {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #000;
         padding-bottom: 10px;
-
         h3 {
             font-size: 30px;
             margin-bottom: 20px;
             font-family: 'Great Vibes', cursive;
         }
-
         p {
             height: nth($heigth, 1);
             text-align: center;
             font-size: 30px;
             font-family: 'Great Vibes', cursive;
-
             a {
                 color: #fff;
                 text-decoration: underline;
                 font-family: 'Great Vibes', cursive;
             }
-
             &:hover a {
                 color: #fff;
                 text-decoration: none;
             }
         }
     }
-
     .mapa {
         iframe {
             height: nth($heigth, 7);
@@ -358,7 +326,6 @@ main {
             margin-top: 50px;
         }
     }
-
     .parrafomapa {
         h2 {
             font-family: 'Great Vibes', cursive;

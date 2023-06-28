@@ -1,139 +1,158 @@
 /* media query index */
-@media screen and (max-width:1190px) {
-    .hero {
-        nav {
-            background: none;
-            height: 20%;
-            width: 20%;
+@media screen and (max-width:1190px){
+    .hero{
+        img{
+            height: 0px;
+            width: 0px;
         }
-
-        img {
-            height: 300px;
-            width: 300px;
-            top: 50px;
-            left: 0;
+        .menu{
+            h1{
+                font-size: 20px;
+                display: flex;
+                padding-top: 0px;
+                font-size: 0px;
+                margin-top: 50px;
+                position: relative;
+            }
         }
-    }
-
-    .barranav {
-        a {
-            color: black;
-            position: absolute;
-        }
-    }
-
-    .parrafo {
-        align-items: end;
-        font-size: 100%;
     }
 }
 
+
 @media screen and (max-width:998px) {
-    .hero {
-        img {
-            height:0px;
+    .hero{
+        .menu{
+            .cta{
+                height: 30px;
+                width: 30px;
+                .boton{
+                    padding: 0;
+                    height: 0px;
+                    width: 0px;
+                    font-size:0px;
+                    position: absolute;
+                    right: 50px;
+                    
+                }
+            }
+            h1{
+                font-size: 0px;
+                margin-top: 50px;
+                position: relative;
+            }
+            .navlink{
+                nav{
+                    div{
+                        button{
+                            width: 60px;
+                            font-size: 10px;
+                            top: 0px;
+                        }
+                        div{
+                            ul{
+                                li{
+                                    a{
+                                        font-size: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .direccionlogo{
+        img{
+            height: 0px;
             width: 0px;
             top: 0;
         }
-
-        h1 {
-            font-size: 0px;
-            margin-top: 50px;
-            transition: 5s;
-            position: relative;
-        }
     }
-
-    .cta {
-        button {
-            height: 50px;
-            width: 20px;
-            font-size: 15px;
-            position: absolute;
-            left: 0px;
-            width: 60px;
+    .main{
+        .wrapper{
             font-size: 10px;
-            top: 0px;
-        }
-    }
-
-    .navlink {
-        a {
-            font-size: 40px;
-        }
-    }
-
-    .wrapper {
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        flex-direction: column;
-    }
-
-    .card {
-        height: 180px;
-        width: 200px;
-        font-size: 15px;
-        margin-right: 5px;
-        margin-left: 10px;
-
-        h2 {
-            font-size: 15px;
-        }
-
-        .info {
-            p {
-                font-size: 0px;
-            }
-
-            a {
-                width: 80px;
-                height: 30px;
-            }
-        }
-
-        .btn {
             display: flex;
-            flex-direction: row;
-            font-size: 5px;
-            left: 5px;
+            justify-content:space-around;
+            flex-direction:row;
+            .card{
+                height: 180px;
+                width: 200px;
+                font-size: 15px;
+                margin-right: 5px;
+                margin-left: 10px;
+                .info{
+                    top: 50px;
+                    h2{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 0px;
+                    }
+                    a{
+                        width: 80px;
+                        height: 30px;
+                    }
+                    .btn{
+                        display: flex;
+                        flex-direction: row;
+                        font-size: 5px;
+                        left: 5px;
+                    }
+                }
+            }
         }
-
-        .parrafotarjeta {
-            p {
+        .parrafotarjeta{
+            margin-top: 150px;
+            position: absolute;
+            top: 530px;
+            left: 0px;
+            p{
                 font-size: 15px;
                 display: flex;
                 flex-direction: column;
             }
-
-            img {
-                font-size: 15px;
-                display: flex;
-                flex-direction: column;
+            img{
+                height: 80px;
+                width: 80px;
             }
         }
     }
     .piepagina{
-            position: relative;
-            font-size: 15px;
+        position: relative;
+        font-size: 15px;
         .grupouno{
             width: 200px;
             height: 800px;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 10px;
             padding: 25px 0px;
+            .box{
+                figure{
+                    a{
+                        img{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
             .boxuno{
                 position: absolute;
-                top: 100px;
-                img{
-                    height: 50px;
-                    width: 50px;
-                }
+                top: 100px;  
+                
             }
             .boxdos{
                 position: absolute;
                 top: 290px;
+                .redsocial{
+                    a{
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
             }
         }
         .grupodos{
@@ -143,188 +162,342 @@
             font-size: 10px;
         }
     }
-    .redsocial{
-        img{
-            height: 20px;
-            width: 20px;
-        }
-    }
+
 }
-
 @media screen and (max-width:650px) {
-    .navlink {
-        a {
-            font-size: 25px;
+    .hero{
+        .menu{
+            .cta{
+                height: 30px;
+                width: 30px;
+                .boton{
+                    padding: 0;
+                    height: 0px;
+                    width: 0px;
+                    font-size:0px;
+                    position: absolute;
+                    right: 50px;
+                    
+                }
+            }
+            h1{
+                font-size: 0px;
+                margin-top: 50px;
+                position: relative;
+            }
+            .navlink{
+                nav{
+                    div{
+                        button{
+                            width: 60px;
+                            font-size: 10px;
+                            top: 0px;
+                        }
+                        div{
+                            ul{
+                                li{
+                                    a{
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-    .parrafotarjeta {
-        h2 {
-            font-size: 15px;
+    .direccionlogo{
+        img{
+            height: 0;
+            width: 0;
         }
-
-        p {
+    }
+    .main{
+        .wrapper{
+            font-size: 10px;
             display: flex;
-            justify-content: start;
-            position: relative;
+            justify-content:space-around;
+            flex-direction:row;
+            .card{
+                height: 180px;
+                width: 100px;
+                font-size: 15px;
+                margin-right: 5px;
+                margin-left: 10px;
+                .info{
+                    h2{
+                        font-size: 15px;
+                    }
+                    p{
+                        font-size: 0px;
+                    }
+                    a{
+                        width: 80px;
+                        height: 30px;
+                    }
+                    .btn{
+                        display: flex;
+                        flex-direction: row;
+                        font-size: 5px;
+                        left: 5px;
+                    }
+                }
+            }
         }
-
-        img {
-            height: 80px;
-            width: 80px;
-            display: flex;
+        .parrafotarjeta{
+            margin-top: 150px;
             position: absolute;
+            top: 530px;
             left: 0px;
+            p{
+                display: flex;
+                justify-content: start;
+                position: relative;
+            }
+            h2{
+                font-size: 15px;
+            }
+            img{
+                height: 80px;
+                width: 80px;
+                display: flex;
+                position: relative;
+                left: 0px;
+            }
         }
     }
     .piepagina{
         position: relative;
         font-size: 15px;
-        .boxuno{
-            position: absolute;
-            top: 100px;
+        .grupouno{
+            width: 200px;
+            height: 800px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            padding: 25px 0px;
+            .box{
+                figure{
+                    a{
+                        img{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+            .boxuno{
+                position: absolute;
+                top: 100px;
+                
+            }
+            .boxdos{
+                position: absolute;
+                top: 290px;
+                .redsocial{
+                    a{
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
         }
-        .boxdos{
+        .grupodos{
             position: absolute;
-            top: 290px;
+            top: 380px;
+            left: 0px;
+            font-size: 10px;
         }
-    }
-    .grupodos{
-        position: absolute;
-        top: 380px;
-        left: 0px;
-        font-size: 10px;
     }
 }
 
 /*cierra media query index*/
 
 /*comienza mediaquery americana */
-@media screen and (max-width:986px) {
-    .contenedortituloamericana {
-        img {
-            left: 300px;
+@media screen and (max-width:986px){
+    main{
+        .tituloamericana{
+            justify-content: start;
             transition: 2s;
-            height: 50px;
-            width: 50px;
-            transition: 3s;
+            .contenedortituloamericana{
+                h2{
+                    width: 500px;
+                    font-size: 30px;
+                    transition: 2s;
+                }
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                    transition: 2s;
+                }
+            }
         }
-        h2 {
-            width: 500px;
-            font-size: 30px;
-            transition: 2s;
+        .contenedorimagenesamericanas{
+            .tarjetaamericana{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
-    .tituloamericana{
-        justify-content: start;
-        transition: 2s;
-    }
-    .redes{
-        img{
-            height: 30px;
-            width: 30px;
-        }
-        h3{
-            font-size: 15px;
-        transition: 2s;
-        }
-    }
+    
 }
+    
 @media screen and (max-width:780px){
-    .contenedorimagenesamericana{
-        width: 100%;
-        margin: 0;
-        grid-template-columns: 1fr 1fr;
-    }
-    .redes{
-        img{
-            width:30px;
-            height: 30px;
+    main{
+        .tituloamericana{
+            justify-content: start;
             transition: 2s;
+            .contenedortituloamericana{
+                h2{
+                    width: 500px;
+                    font-size: 30px;
+                    transition: 2s;
+                }
+            }
+        }
+        .contenedorimagenesamericanas{
+            width: 100%;
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+            .tarjetaamericana{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
-}
+    
+}    
 @media screen and (max-width:527px){
-    .contenedorimagenesamericanas{
-        grid-template-columns: 1fr;
-        img{
-            left: 70px;
+    main{
+        .tituloamericana{
+            justify-content: start;
+            transition: 2s;
+            .contenedortituloamericana{
+                h2{
+                    width: 100px;
+                    font-size: 15px;
+                }
+                img{
+                    height: 40px;
+                    width: 40px;
+                    left: 70px;
+                }
+            }
         }
-        h2{
-            width: 100px;
-            font-size: 15px;
-        }
-    }
-    .redes{
-        img{
-            height: 20px;
-            width: 20px;
+        .contenedorimagenesamericanas{
+            grid-template-columns: 1fr;
+            .tarjetaamericana{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
 /*cierra media query americana*/
 /*mediaquery rusa*/
 @media screen and (max-width:986px){
-    .contenedortitulo{
-        h2{
-            width: 500px;
-            font-size: 30px;
+    main{
+        .titulorusa{
+            justify-content: start;
             transition: 2s;
+            .contenedortitulo{
+                h2{
+                    width: 500px;
+                    font-size: 30px;
+                    transition: 2s;
+                }
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                    transition: 2s;
+                }
+            }
         }
-        img{
-            left: 300px;
-            transition: 2s;
-            height:50px;
-            width: 50px;
-            transition: 2s;
-        }
-    }
-    .titulorusa{
-        justify-content: start;
-        transition: 2s;
-    }
-    .redes{
-        img{
-            height: 30px;
-            width: 30px;
-            transition: 2s;
+        .contenedorimagenesrusas{
+            .tarjetarusa{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
 @media screen and (max-width:780px){
-    .contenedorimagenesrusas{
-        width: 100%;
-        margin: 0;
-        grid-template-columns: 1fr 1fr;
-    }
-    .redes{
-        img{
-            width:30px;
-            height: 30px;
+    main{
+        .titulorusa{
+            justify-content: start;
             transition: 2s;
+            .contenedortitulo{
+                h2{
+                    width: 500px;
+                    font-size: 30px;
+                    transition: 2s;
+                }
+            }
+        }
+        .contenedorimagenesrusas{
+            width: 100%;
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+            .tarjetarusa{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
 @media screen and (max-width:527px){
-    .contenedorimagenesrusas{
-        grid-template-columns: 1fr;
-    }
-    .contenedortitulo{
-        img{
-            left: 100px;
-        }
-        h2{
-            width: 100px;
-            font-size: 15px;
-        }
-    }
-    .redes{
-        img{
-            height: 20px;
-            width: 20px;
-        }
-        h3{
-            font-size: 15px;
+    main{
+        .titulorusa{
+            justify-content: start;
             transition: 2s;
+            .contenedortitulo{
+                h2{
+                    width: 100px;
+                    font-size: 15px;
+                }
+                img{
+                    height: 40px;
+                    width: 40px;
+                    left: 70px;
+                }
+            }
+        }
+        .contenedorimagenesrusas{
+            grid-template-columns: 1fr;
+            .tarjetarusa{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
@@ -352,53 +525,92 @@
 }
 /*media query semipemanente*/
 @media screen and (max-width:986px){
-    .meinsemi{
+    .mainsemi{
         .titulosemipermanente{
             justify-content: start;
             transition: 2s;
             .contenedortitulosemipermanente{
                 h2{
-                    width: 100px;
-                    font-size: 20px;
+                    width: 500px;
+                    font-size: 30px;
                     transition: 2s;
                 }
                 img{
-                    left: 100px;
+                    left: 300px;
                     transition: 2s;
                     height:50px;
                     width: 50px;
-                    transition: 3s;
+                    transition: 2s;
+                }
+            }
+        }
+        .contenedorimagenessemipermanente{
+            .tarjetasemipermanente{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
                 }
             }
         }
     }
 }
 @media screen and (max-width:780px){
-    .meinsemi{
+    .mainsemi{
+        .titulosemipermanente{
+            justify-content: start;
+            transition: 2s;
+            .contenedortitulosemipermanente{
+                h2{
+                    width: 500px;
+                    font-size: 30px;
+                    transition: 2s;
+                }
+            }
+        }
         .contenedorimagenessemipermanente{
             width: 100%;
-            margin: 0px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            margin: 0;
+            grid-template-columns: 1fr 1fr;
+            .tarjetasemipermanente{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
 @media screen and (max-width:527px){
-    .meinsemi{
+    .mainsemi{
         .titulosemipermanente{
+            justify-content: start;
+            transition: 2s;
             .contenedortitulosemipermanente{
                 h2{
                     width: 100px;
-                font-size: 15px;
+                    font-size: 15px;
                 }
                 img{
+                    height: 40px;
+                    width: 40px;
                     left: 70px;
                 }
             }
         }
         .contenedorimagenessemipermanente{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: 1fr;
+            .tarjetasemipermanente{
+                img{
+                    left: 300px;
+                    transition: 2s;
+                    height:50px;
+                    width: 50px;
+                }
+            }
         }
     }
 }
